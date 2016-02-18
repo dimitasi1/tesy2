@@ -18,7 +18,7 @@ class GildedItem(Item):
 
     def change_qual(self):
         # lower quality
-        if (self.quality > self.delta_quality):
+        if (self.quality > (0 - self.delta_quality)):
             self.quality += self.delta_quality
         else:
             self.quality = 0
